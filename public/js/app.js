@@ -11,7 +11,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     const city = form.city.value.trim();
     const country = form.country.value.trim();
-    const url = `http://localhost:3000/weather?city=${city}&country=${country}`;
+    const url = `/weather?city=${city}&country=${country}`;
     msgOne.innerText = "Loading...";
     msgTwo.innerText = "";
     fetch(url)
